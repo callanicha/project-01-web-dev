@@ -1,0 +1,44 @@
+@import url('https://fonts.google.com/specimen/Encode+Sans+Expanded?query=encode+sans');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+header{
+    background: rgb(255, 191, 238);
+}
+
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 96px;
+    padding: 0.5em;
+}
+
+.navBar ul, 
+.navBar li{
+    list-style-type: none;
+}
+
+.navBar ul{
+    display: flex;
+    min-width: 290px;
+    justify-content: space-between;
+}
+
+.navBar a{
+    text-decoration: none;
+    color:rgb(192, 0, 134);
+}
+
+.navBar img{
+    border-radius: 50%;
+    max-width: 50px;
+}
