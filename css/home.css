@@ -1,0 +1,43 @@
+.home {
+	background-image: url("homepage.jpg");
+	height: 600px;
+	background-size: cover;
+}
+
+.home h1 {
+	text-align: center;
+	color: rgb(145, 86, 152);
+	font-size: 48px;
+	padding-top: 200px;
+	text-shadow: 2px 2px 5px beige;
+}
+
+.home p {
+	text-align: center;
+	color: rgb(145, 86, 152);
+	font-size: 24px;
+	padding-top: 30px;
+}
+
+.cta-button {
+	margin: auto;
+	margin-top: 30px;
+	display: block;
+	background-color: rgb(145, 86, 152);
+	border-radius: 24px;
+	border-style: none;
+	box-shadow: rgba(0, 0, 0, 0.2) 0 3px 5px -1px,
+		rgba(0, 0, 0, 0.14) 0 6px 10px 0, rgba(0, 0, 0, 0.12) 0 1px 18px 0;
+	box-sizing: border-box;
+	color: beige;
+	height: 43px;
+	font-size: 14px;
+	font-weight: 500;
+	overflow: visible;
+	padding: 2px 24px;
+}
+
+.cta-button:hover {
+	background: #c475b0;
+	color: beige;
+}

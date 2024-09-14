@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
+    <head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="styles.css" />
+		<link rel="stylesheet" href="css/styles.css" />
 		<title>project1</title>
 	</head>
 	<body>
 		<header class="header">
-			<img src="kuromi.gif" alt="logo" />
-			<button id="toggle-btn">button</button>
+			<img src="pic/kuromi.gif" alt="logo" />
+			<button id="toggle-btn"><img src="pic/menu.png" alt="Menu"></button>
 			<nav class="navBar">
 				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Contact</a></li>
+					<li><a href="index.html" class="nav-link">Home</a></li>
+					<li><a href="about.html" class="nav-link">About</a></li>
+					<li><a href="contact.html" class="nav-link">Contact</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -24,9 +24,49 @@
 				<p>A day without pink is like a day without sunlight.</p>
 				<button class="cta-button">૮꒰ ˶• ༝ •˶꒱ა ♡</button>
 			</div>
-			<div class="gallery"></div>
+            <section class="gallery-container">
+                <div class="title">
+                    <h1>Characters</h1>
+                    <p>Jewelpets (ジュエルペット Juerupetto) are magical "pets" who live in Jewel Land.</p>
+                </div>
+                <div class="gallery">
+                    <div class="characters">
+                        <div class="characters-pic">
+                            <img src="pic/ruby.jpeg" alt="Ruby" />
+                        </div>
+                        <h1>ルビー</h1>
+                        <p>Ruby (ルビー Rubī) is a female Japanese hare Jewelpet who represents Luck or Courage</p>
+                    </div>
+                    <div class="characters">
+                        <div class="characters-pic">
+                            <img src="pic/sapphie.jpeg" alt="Sapphie" />
+                        </div>
+                        <h1>サフィー</h1>
+                        <p>Sapphie (サフィー Safī) is a female Cavalier King Charles Spaniel Jewelpet who represents Friendship</p>
+                    </div>
+                    <div class="characters">
+                        <div class="characters-pic">
+                            <img src="pic/labra.jpeg" alt="Labra" />
+                        </div>
+                        <h1>ラブラ</h1>
+                        <p>Labra (ラブラ Rabura) is a female polar bear Jewelpet who represents Hidden Powers</p>
+                    </div>
+                    <div class="characters">
+                        <div class="characters-pic">
+                            <img src="pic/larimar.jpeg" alt="Larimar" />
+                        </div>
+                        <h1>ラリマー</h1>
+                        <p>Larimar (ラリマー Rarimā) is a female Arctic fox Jewelpet who represents Love and Peace</p>
+                    </div>
+                </div>
+            </section>
 		</main>
-		<footer></footer>
+		<footer class="footer">
+            <h2>'Advance Web Development' project 01</h2>
+            <p>By Natthanicha VONGJARIT ©</p>
+            <a href="https://www.facebook.com/"><img src="pic/facebook-logo.webp" alt="fb"><i class="facebook"></i></a>
+            <a href="https://www.instagram.com/"><img src="pic/insta-logo.png" alt="ig"><i class="Instagram"></i></a>
+        </footer>
 		<script src="./script.js"></script>
 	</body>
 </html>

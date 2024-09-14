@@ -1,0 +1,134 @@
+@import url("https://fonts.google.com/specimen/Encode+Sans+Expanded?query=encode+sans");
+@import url("home.css");
+@import url("gallery.css");
+@import url("footer.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: serif;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    justify-content: space-between;
+    background: #ffe9fa;
+}
+
+.header img {
+    border-radius: 50%;
+    max-width: 50px;
+}
+
+.header .navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 0;
+    inset: 0;
+    position: absolute;
+    overflow: hidden;
+    transition: all 240ms ease-in-out;
+    top: 72px;
+}
+
+.header button {
+	display: none;
+    background-color: rgb(145, 86, 152);
+    color: beige;
+    padding: 0.8em 1em;
+    border: none;
+    cursor: pointer;
+    border-radius: 24px;
+    overflow: visible;
+}
+
+.header #toggle-btn img {
+	width: 30px;
+    height: auto;
+}
+
+.header button:hover {
+    background: #c475b0;
+}
+
+
+.header .navBar.show {
+    height: 90vh;
+}
+
+.header .navBar ul,
+.header .navBar li {
+    list-style-type: none;
+}
+
+.header .navBar ul {
+    display: flex;
+    min-width: 290px;
+    justify-content: space-between;
+    gap: 1em;
+    flex-direction: column;
+    background-color: #ffe9fa;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    transition: all 250ms ease-in-out;
+    width: 100vw;
+}
+
+.header .navBar a {
+    text-decoration: none;
+    color: rgb(145, 86, 152);
+    font-size: 20px;
+    padding: 0.5em;
+    transition: color 200ms ease-in-out;
+}
+
+.header .navBar a:hover {
+    color: #c475b0;
+}
+
+@media (min-width: 769px) {
+    .header .navBar {
+        display: flex;
+        position: static;
+        height: auto;
+        overflow: visible;
+    }
+
+    .header .navBar ul {
+        flex-direction: row;
+        height: auto;
+        width: auto;
+        background-color: transparent;
+    }
+
+    #toggle-btn {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .header .navBar {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 72px;
+        left: 0;
+        right: 0;
+        background-color: #ffe9fa;
+        width: 100%;
+    }
+
+    .header .navBar.show {
+        display: flex;
+        height: auto;
+    }
+
+    #toggle-btn {
+        display: block;
+    }
+}
