@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded&display=swap");
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 2em auto;
+    gap: 2em;
+}
+
+.form-container, .map-container {
+    flex: 1;
+    background-color: #ffe9fa;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+    color: rgb(145, 86, 152);
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+input, textarea {
+    padding: 0.5em;
+    border: 2px solid rgb(145, 86, 152);
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.contact-button {
+    background-color: rgb(145, 86, 152);
+    color: #fff;
+    border: none;
+    padding: 0.5em 1em;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-button:hover {
+    background-color: #c475b0;
+}
+
+.map-container {
+    height: 400px;
+}
+
+.social-links {
+    margin-top: 1em;
+}
+
+.social-links img {
+    width: 30px;
+    margin: 0 0.5em;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}

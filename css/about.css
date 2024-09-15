@@ -1,0 +1,12 @@
+.about-page p{
+    color: rgb(145, 86, 152);
+    text-align: center;
+    padding: 1em;
+}
+
+.about-page h1 {
+    color: rgb(145, 86, 152);
+    text-align: center;
+    font-size: 2.5em;
+    margin: 1em;
+}
